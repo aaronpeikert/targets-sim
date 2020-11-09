@@ -11,7 +11,7 @@ continued_testing_ <- function(n, k){
     d <- rbind(d, simulate(n))
     p <- c(p, get_p(d))
   }
-  p
+  list(p)
 }
 
 continued_testing <- function(n, k, seed = .Random.seed){
